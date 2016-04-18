@@ -15,6 +15,8 @@
 		52EE572F1CC4DFCA0073E2F0 /* MusicVideoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52EE572E1CC4DFCA0073E2F0 /* MusicVideoTests.swift */; };
 		52EE573A1CC4DFCA0073E2F0 /* MusicVideoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52EE57391CC4DFCA0073E2F0 /* MusicVideoUITests.swift */; };
 		52EE574C1CC4E6030073E2F0 /* APIManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52EE574B1CC4E6030073E2F0 /* APIManager.swift */; };
+		52EE574F1CC4F4B00073E2F0 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52EE574E1CC4F4B00073E2F0 /* Constants.swift */; };
+		52EE57511CC4F6370073E2F0 /* MusicVideo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52EE57501CC4F6370073E2F0 /* MusicVideo.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +51,8 @@
 		52EE57391CC4DFCA0073E2F0 /* MusicVideoUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MusicVideoUITests.swift; sourceTree = "<group>"; };
 		52EE573B1CC4DFCA0073E2F0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		52EE574B1CC4E6030073E2F0 /* APIManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIManager.swift; sourceTree = "<group>"; };
+		52EE574E1CC4F4B00073E2F0 /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		52EE57501CC4F6370073E2F0 /* MusicVideo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MusicVideo.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,6 +103,7 @@
 		52EE57181CC4DFCA0073E2F0 /* MusicVideo */ = {
 			isa = PBXGroup;
 			children = (
+				52EE574D1CC4F4950073E2F0 /* Utils */,
 				52EE574A1CC4E18A0073E2F0 /* Supporting Files */,
 				52EE57471CC4E1410073E2F0 /* Model */,
 				52EE57481CC4E14A0073E2F0 /* Controller */,
@@ -128,6 +133,7 @@
 		52EE57471CC4E1410073E2F0 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				52EE57501CC4F6370073E2F0 /* MusicVideo.swift */,
 				52EE574B1CC4E6030073E2F0 /* APIManager.swift */,
 			);
 			name = Model;
@@ -158,6 +164,14 @@
 				52EE57191CC4DFCA0073E2F0 /* AppDelegate.swift */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		52EE574D1CC4F4950073E2F0 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				52EE574E1CC4F4B00073E2F0 /* Constants.swift */,
+			);
+			name = Utils;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -293,7 +307,9 @@
 			files = (
 				52EE574C1CC4E6030073E2F0 /* APIManager.swift in Sources */,
 				52EE571C1CC4DFCA0073E2F0 /* ViewController.swift in Sources */,
+				52EE57511CC4F6370073E2F0 /* MusicVideo.swift in Sources */,
 				52EE571A1CC4DFCA0073E2F0 /* AppDelegate.swift in Sources */,
+				52EE574F1CC4F4B00073E2F0 /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

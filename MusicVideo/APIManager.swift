@@ -32,7 +32,7 @@ class APIManager {
                 //print(data)
                 do{
                     if let json = try NSJSONSerialization.JSONObjectWithData(data!, options: .AllowFragments)
-                        as? [String:AnyObject] {
+                        as? JSONDicitionary {
                             print(json)
                             
                             let priority = DISPATCH_QUEUE_PRIORITY_HIGH
