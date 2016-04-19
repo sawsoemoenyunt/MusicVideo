@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		52BA6C2B1CC5AB2800438011 /* MusicVideoTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52BA6C2A1CC5AB2800438011 /* MusicVideoTVC.swift */; };
 		52EE571A1CC4DFCA0073E2F0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52EE57191CC4DFCA0073E2F0 /* AppDelegate.swift */; };
 		52EE571C1CC4DFCA0073E2F0 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52EE571B1CC4DFCA0073E2F0 /* ViewController.swift */; };
 		52EE571F1CC4DFCA0073E2F0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 52EE571D1CC4DFCA0073E2F0 /* Main.storyboard */; };
@@ -38,6 +39,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		52BA6C2A1CC5AB2800438011 /* MusicVideoTVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MusicVideoTVC.swift; sourceTree = "<group>"; };
 		52EE57161CC4DFCA0073E2F0 /* MusicVideo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MusicVideo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		52EE57191CC4DFCA0073E2F0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		52EE571B1CC4DFCA0073E2F0 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -148,6 +150,7 @@
 			isa = PBXGroup;
 			children = (
 				52EE571B1CC4DFCA0073E2F0 /* ViewController.swift */,
+				52BA6C2A1CC5AB2800438011 /* MusicVideoTVC.swift */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
@@ -326,6 +329,7 @@
 				52EE571A1CC4DFCA0073E2F0 /* AppDelegate.swift in Sources */,
 				52EE57561CC51CDC0073E2F0 /* Reachability.m in Sources */,
 				52EE574F1CC4F4B00073E2F0 /* Constants.swift in Sources */,
+				52BA6C2B1CC5AB2800438011 /* MusicVideoTVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -555,6 +559,7 @@
 				52EE57401CC4DFCA0073E2F0 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		52EE57411CC4DFCA0073E2F0 /* Build configuration list for PBXNativeTarget "MusicVideoTests" */ = {
 			isa = XCConfigurationList;
@@ -563,6 +568,7 @@
 				52EE57431CC4DFCA0073E2F0 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		52EE57441CC4DFCA0073E2F0 /* Build configuration list for PBXNativeTarget "MusicVideoUITests" */ = {
 			isa = XCConfigurationList;
@@ -571,6 +577,7 @@
 				52EE57461CC4DFCA0073E2F0 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
