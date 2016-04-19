@@ -11,7 +11,7 @@ import UIKit
 class MusicVideoTVC: UITableViewController {
 
     var videos = [Videos]()
- 
+    var limit = 100
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -93,10 +93,28 @@ class MusicVideoTVC: UITableViewController {
         }
     }
     
+    @IBAction func refresh(sender: UIRefreshControl) {
+        
+        refreshControl?.endRefreshing()
+        runAPI()
+    }
+    
+    
+    func getAPICount(){
+        let formatter = NSDateFormatter()
+        formatter.dateFormat = "E, dd MM yyyy HH:mm:ss"
+        let refreshDte = formatter.stringFromDate(NSDate())
+        
+        refreshControl?.attributedTitle = NSAttributedString(string: "\(refreshDte)")
+    }
+    
     func runAPI(){
+        
+        getAPICount()
+        
         //Call API
         let api = APIManager()
-        api.loadData("https://itunes.apple.com/us/rss/topmusicvideos/limit=200/json",completion: didLoadData)
+        api.loadData("https://itunes.apple.com/us/rss/topmusicvideos/limit=\(limit)/json",completion: didLoadData)
     }
     
     // Is called just as the object is about to be deallocated

@@ -73,7 +73,23 @@
                             <outlet property="delegate" destination="cZu-mf-WMA" id="Vrd-yv-Lav"/>
                         </connections>
                     </tableView>
+                    <toolbarItems>
+                        <barButtonItem style="plain" systemItem="flexibleSpace" id="qer-By-ASq">
+                            <color key="tintColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                        </barButtonItem>
+                        <barButtonItem title="Top 100" id="jSP-5T-W0H">
+                            <color key="tintColor" red="0.96470588239999999" green="0.25490196079999999" blue="0.56862745100000001" alpha="1" colorSpace="calibratedRGB"/>
+                        </barButtonItem>
+                        <barButtonItem style="plain" systemItem="flexibleSpace" id="iV3-JD-1lC"/>
+                    </toolbarItems>
                     <navigationItem key="navigationItem" id="w9x-Up-1iI"/>
+                    <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
+                    <refreshControl key="refreshControl" opaque="NO" multipleTouchEnabled="YES" contentMode="center" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" id="cYk-ZF-ajl">
+                        <autoresizingMask key="autoresizingMask"/>
+                        <connections>
+                            <action selector="refresh:" destination="cZu-mf-WMA" eventType="valueChanged" id="c5L-GQ-AhE"/>
+                        </connections>
+                    </refreshControl>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Cqu-HZ-JU7" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -195,6 +211,9 @@
                     <toolbarItems>
                         <barButtonItem systemItem="play" id="Vbg-7v-OiL">
                             <color key="tintColor" red="0.96470588239999999" green="0.25490196079999999" blue="0.56862745100000001" alpha="1" colorSpace="calibratedRGB"/>
+                            <connections>
+                                <action selector="playVideo:" destination="fXI-jm-4PO" id="Jh9-Gw-zSR"/>
+                            </connections>
                         </barButtonItem>
                         <barButtonItem style="plain" systemItem="flexibleSpace" id="q3P-9c-OB6"/>
                         <barButtonItem systemItem="action" id="iqz-dt-LUW">
