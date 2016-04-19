@@ -16,6 +16,7 @@ class MusicVideoTVC: UITableViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        self.title = "Top MTVs"
         self.tableView.rowHeight = 132.0
         navigationController?.setToolbarHidden(false, animated: true)
         
