@@ -25,6 +25,8 @@ class Videos {
     private var _vLinkToiTunes:String
     private var _vReleaseDte:String
     
+    //the variable gets created fromt he UI
+    var vImageData:NSData?
     
     //make a getter
     

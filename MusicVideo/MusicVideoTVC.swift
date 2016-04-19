@@ -17,6 +17,7 @@ class MusicVideoTVC: UITableViewController {
         super.viewDidLoad()
         
         self.tableView.rowHeight = 132.0
+        navigationController?.setToolbarHidden(false, animated: true)
         
         NSNotificationCenter.defaultCenter().addObserver(self, selector: "reachabilityStatusChanged", name: "ReachStatusChanged", object: nil)
         
